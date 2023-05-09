@@ -17,7 +17,7 @@ with open('recipes.txt', 'rt', encoding='utf-8') as file:
             ingredients.append(ingredient)
         file.readline()
         cook_book[recipe_name] = ingredients
-    #pprint(cook_book, sort_dicts=False)
+    pprint(cook_book, sort_dicts=False)
 
 # Homework 2
 def get_shop_list_by_dishes(dishes, person_count):
@@ -37,7 +37,7 @@ def get_shop_list_by_dishes(dishes, person_count):
             print(f'Блюдо "{dish}" отсутствует в cook_book')
     return ingredients
 
-#pprint(get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2), sort_dicts=False)
+pprint(get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2), sort_dicts=False)
 
 # Homework 3
 Files_count_line = {}
